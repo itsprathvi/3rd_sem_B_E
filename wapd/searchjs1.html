@@ -1,0 +1,45 @@
+<html><head>
+
+    <script type="text/javascript">
+    
+    function validate()
+    
+    {
+    
+    strValidate=strForm.str.value.search(/1BM16IS[0-9]{3}/i);
+    
+    //strValidate=strForm.str.value.search(/[0-9]{10}/);
+    
+    if(strValidate== -1)
+    
+    {
+    
+    alert("Not Valid");
+    
+    }
+    
+    else
+    
+    {
+    
+    alert("Valid");
+    
+    }
+    
+    }
+    
+    </script>
+    
+    </head><body>
+    
+    <form name="strForm" onsubmit="validate();">
+    
+    <label> <b> Enter USN </b> </label>
+    
+    <input type="text" name="str"/>
+    
+    <input type="submit" value="Submit"/>
+    
+    </form>
+    
+    </body></html>

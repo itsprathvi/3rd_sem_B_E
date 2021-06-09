@@ -1,0 +1,29 @@
+<html> 
+<head>
+<title>Moving Elements</title> 
+<script type = "text/javascript"> 
+function moveIt(elem, newTop, newLeft) 
+{ dom = document.getElementById(elem).style; 
+  dom.top = newTop + "px"; 
+  dom.left = newLeft + "px"; 
+  }
+</script> 
+</head> 
+<body> 
+<form> 
+<p> 
+<label> x - coordinate: <input type = "text" id = "leftCoord" size = "3" /> </label> 
+<br/> 
+<label> y - coordinate: <input type = "text" id = "topCoord" size = "3" /> </label> 
+<br/> 
+<input type="button" 
+value="Move It" 
+onclick = "moveIt('utsav', document.getElementById('topCoord').value, 
+                 document.getElementById ('leftCoord').value)" />
+</p> 
+</form> 
+<div id = "utsav" style = "position:absolute;top:115px;left:0;"> 
+<img src = "utsav.jpg" height="300" width="300" alt = "UTSAV 2017" />
+</div> 
+</body> 
+</html>

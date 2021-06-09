@@ -1,0 +1,31 @@
+<html> 
+<head>
+<title>Moving Elements</title> 
+<script type = "text/javascript"> 
+function moveIt(elem, newTop, newLeft) 
+{ 
+	i = document.getElementById(elem).style; 
+  i.top = newTop + "px"; 
+  i.left = newLeft + "px"; 
+  }
+</script> 
+</head> 
+<body> 
+<form> 
+<p> 
+<label> x - coordinate (left): <input type = "text" id = "leftCoord" size = "3" /> </label> 
+<br/> 
+<label> y - coordinate (top): <input type = "text" id = "topCoord" size = "3" /> </label> 
+<br/> 
+<input type="button" 
+value="MOVE" 
+onclick = "moveIt('phaseshift', document.getElementById('topCoord').value, 
+                 document.getElementById ('leftCoord').value)" />
+</p> 
+</form> 
+<div id = "phaseshift" 
+style = "position:absolute;top:115px;left:0; "> 
+<img src = "Phaseshift_2015.jpg" height="200" width="200" alt = "PHASE SHIFT 2016" border="2px"  />
+</div> 
+</body> 
+</html>

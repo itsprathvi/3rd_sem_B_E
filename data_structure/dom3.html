@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Sample DOM Document</title>
+<script type="text/javascript">
+function myfun(){
+var numChecked = 0;
+var dom = document.getElementById("vehicleGroup");
+
+for (index = 0;index < 3;index++)
+if(dom.vehichles[index].checked)
+	numChecked++;
+alert("Number of Checkboxes Checked "+numChecked);
+	}
+</script>
+</head>
+<body>
+<form id = "vehicleGroup">
+<label><input type = "checkbox" name = "vehichles"  value = "bus" /> Bus</label>
+<label><input type = "checkbox" name = "vehichles" value = "car" /> Car</label>
+<label><input type = "checkbox" name = "vehichles" value = "bike" /> Bike</label>
+</form>
+
+<button onclick="myfun()">Submit</button>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html> 
+<head>
+<title>Element Visibility</title> 
+<script type = "text/javascript"> 
+function flipImag() 
+{ dom = document.getElementById("utsav").style; 
+  if(dom.visibility == "visible") 
+  dom.visibility = "hidden"; 
+  else 
+  dom.visibility = "visible";
+  }
+</script> 
+</head> 
+<body> 
+<form> 
+<div id = "utsav" style = "position:relative; visibility:visible"> 
+<img src = "utsav.jpg" height="300" width="300" alt = "UTSAV 2015" />
+</div> 
+<p><br><input type="button" value="Toggle UTSAV" 
+              onclick = "flipImag()" /></p>
+</from>
+</body> 
+</html>

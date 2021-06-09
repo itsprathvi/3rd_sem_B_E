@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MY WEBPAGE</title>
+	<style type="text/css">
+		.nr{
+			border:5px outset blue; 
+			padding: 2px 2px;
+		}
+		td{
+			border:1px solid black;
+		}
+		th{
+			border:1px solid black;
+		}
+		h2{
+			color: red;
+		}
+		h2:hover{
+			color: green;
+		}
+		table{
+			border:2px solid;
+			transition: width 2s, height 2s, transform 2s;
+		}
+		table:hover {
+			width :10s;height:10s;
+		  transform: skew(30deg,40deg);
+		}
+
+		
+	</style>
+</head>
+<body>
+<table align=center cellpadding="4">
+	<caption><h2>POPULATION SURVEY</h2></caption>
+	<tr >
+		<th  rowspan="3" colspan="2">CI</th>
+        <th rowspan="3" colspan="1">All Gender</th>
+        <th colspan="2">By Gender</th>
+	</tr>
+	<tr class="nr" border="1">
+		<td class="nr" align="center">males</td>
+        <td class="nr" align="center">Females</td>
+	</tr>
+ 	<tr >
+        <td class="nr" align="center">9215604</td>
+        <td class="nr" align="center">4512358</td>
+    </tr>
+    <tr >
+        <th align="center"> Rural</th>
+        <td align="center">6521458</td>
+        <td align="center">4215389</td>
+        <td colspan="2" align="center">41532348</td>
+    </tr>
+</table>
+</body>
+</html>

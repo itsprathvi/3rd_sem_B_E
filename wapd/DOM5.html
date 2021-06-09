@@ -1,0 +1,36 @@
+<html> <body> <script type="text/javascript">
+
+//function to print the position of the leftmost vowel in the string
+
+function firstvowel()
+{
+
+var pos, vowel;
+
+var str=prompt("Enter the string: ");
+
+pos=str.search(/[aeiou]/i);
+
+vowel=str.match(/[aeiou]/gi);
+
+if(pos==-1)
+
+document.write("Vowel Not found");
+
+else
+
+{
+
+document.write("Position of first vowel in the string is: ", (pos+1));
+
+document.write("Vowels found was: ",vowel);
+
+}
+
+}
+
+document.write("Function to find first vowel in a String","<br />");
+
+firstvowel();
+
+</script> </body> </html>

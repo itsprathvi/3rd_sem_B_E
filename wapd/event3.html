@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script>
+
+function color(color)
+{
+    document.getElementById("myForm").myInput.style.background = color;
+}
+
+</script>
+
+</head>
+
+<body align="center" >
+
+<form id="myForm">
+
+<h3>Write a message</h3><br/>
+<input type="text" onkeydown="color('red')" onkeyup="color('white')"name="myInput">
+
+</form>
+
+</body>
+
+</html>

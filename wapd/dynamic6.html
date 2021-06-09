@@ -1,0 +1,22 @@
+<html> 
+<head>
+<title>Element Visibility</title> 
+<script type = "text/javascript"> 
+function flipImage() 
+{ i = document.getElementById("phaseshift").style; 
+  if(i.visibility == "visible") 
+  i.visibility = "hidden"; 
+  else 
+  i.visibility = "visible";
+  }
+</script> 
+</head> 
+<body> 
+<form> 
+<div id = "phaseshift" style = "position:relative; visibility:visible"> 
+<img src = "Phaseshift_2015.jpg" height="200" width="200" alt = "PHASE SHIFT 2016" border="2px" />
+</div> 
+<p><br><input type="button" value="Toggle Visibility of PHASE SHIFT" onclick = "flipImage()" /></p>
+</form>
+</body> 
+</html>

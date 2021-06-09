@@ -1,0 +1,33 @@
+//Program for class template with non type parameter
+#include <iostream>  
+using namespace std;  
+template<class T, int size>  
+class A   
+{  
+    public:  
+    T arr[size];  
+    void insert()  
+    {  
+        int i =1;  
+        for (int j=0;j<size;j++)  
+        {  
+            arr[j] = i;  
+            i++;  
+        }  
+    }  
+      
+    void display()  
+    {  
+        for(int i=0;i<size;i++)  
+        {  
+            out << arr[i] << " ";  
+        }  
+    }  
+};  
+int main()  
+{  
+    A<int,10> t1;  
+    t1.insert();  
+    t1.display();  
+    return 0;  
+}  

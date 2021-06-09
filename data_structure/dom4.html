@@ -1,0 +1,55 @@
+<html>
+<head>
+<script type = "text/javascript" >
+function myFun1()
+{
+alert("Nokia Button was Clicked");
+}
+function myFun2()
+{
+alert("Samsung Button was Clicked");
+}
+</script>
+<head>
+<body>
+<form name="mobileForm"> 
+<input type = "button" value="NOKIA" name="b1" />
+<input type = "button" value="SAMSUNG" name="b2" />
+</form>
+
+<script type = "text/javascript" >
+var  b1_addr= document.mobileForm.b1;
+b1_addr.onclick=myFun1;
+var  b2_addr= document.mobileForm.b2;
+b2_addr.onclick=myFun2;
+</script> 
+
+</body>
+</html><html>
+<head>
+<script type = "text/javascript" >
+function myFun1()
+{
+alert("Nokia Button was Clicked");
+}
+function myFun2()
+{
+alert("Samsung Button was Clicked");
+}
+</script>
+<head>
+<body>
+<form name="mobileForm"> 
+<input type = "button" value="NOKIA" id="b1" />
+<input type = "button" value="SAMSUNG" id="b2" />
+</form>
+
+<script type = "text/javascript" >
+var  b1_addr= document.getElementById("b1");
+b1_addr.onclick=myFun1;
+var  b2_addr= document.getElementById("b2");
+b2_addr.onclick=myFun2;
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+ <html> <body> <script type="text/javascript">
+
+    function find(names) {
+    
+    var count = 0, tmp, pattern1, pattern2;
+    
+    while(names.length){
+    
+    tmp = names.shift();
+    
+    pattern1 = tmp.toLowerCase().slice(-2);
+    
+    pattern2 = tmp.toLowerCase().slice(-1);
+    
+    if( pattern1 == "le" || pattern2 =="y" )
+    
+    count++;
+    
+    }
+    
+    return count;
+    
+    }
+    
+    var list = ["Dinesh Gowda", "Mary GracIe", "Sandeep Sharma", "Archana Reddy"];
+    
+    var count;
+    
+    count=find(list);
+    
+    document.write("<br />",count, " names end with either ‘le' or 'y'");
+    
+    document.write("<br />", list);
+    
+    </script>
+    
+    </body></html>

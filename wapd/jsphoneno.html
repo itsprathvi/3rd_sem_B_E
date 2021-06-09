@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<title>MY WEBPAGE</title>
+<head>
+<script type="text/javascript">
+function validate()
+{
+	strform=newform.str.value.search(/[6-9]{1}[0-9]{9}/); //mail verification /[0-9 || a-z || A-Z]@gmail.com/
+	if(strform==-1)
+	{
+		alert("Not valid");
+	}
+	else
+	{
+		alert("Valid");
+	}
+}
+</script>
+</head>
+<body>
+<form name="newform" onsubmit="validate()">
+<label><br>Enter Mobile Number</b></label>
+<input type="text" name="str"/>
+<input type="submit" value="submit"/>
+</form>
+</body>
+
+</html>
+
+--------+--------*-+-+-*--
